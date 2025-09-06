@@ -1,0 +1,67 @@
+.homeContainer {
+  width: 100%;
+  max-width: 768px;  
+  margin: auto;
+  padding: 20px;
+}
+
+.titleText {
+  font-size: 40px;
+  text-align: center;
+}
+
+.actionContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.yarnInfoButton {
+  margin-left: 8px;
+}
+
+.tableContainer {
+  margin-top: 20px;
+}
+
+.tableContainer table {
+  table-layout: fixed;
+}
+
+.tableContainer th:nth-child(1) {
+  width: 14%;
+}
+
+.tableContainer th,
+.tableContainer td {
+  padding: 4px 8px;
+  text-align: center;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.projectCell {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 599px) {
+  .tableContainer th,
+  .tableContainer td {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .titleText {
+    font-size: 20px;
+  }
+
+  .actionContainer,
+  .tableContainer {
+    margin-top: 10px;
+  }
+
+  .actionContainer > button {
+    font-size: 12px;
+  }
+}

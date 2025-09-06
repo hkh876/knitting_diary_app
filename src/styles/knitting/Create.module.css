@@ -1,0 +1,153 @@
+.projectCreateContainer {
+  width: 100%;
+  max-width: 768px;  
+  margin: auto;
+  padding: 20px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.titleText {
+  font-size: 40px;
+}
+
+.dateContainer {
+  max-width: 70%;
+  margin-left: auto;
+}
+
+.startDateContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.dateText {
+  text-wrap: nowrap;
+}
+
+.endDateContainer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.actionContainer {
+  margin-top: 14px;
+  display: flex;
+  column-gap: 8px;
+}
+
+.saveButton {
+  margin-left: auto;
+}
+
+.cancelButton {
+  background-color: gray;
+}
+
+.contentsGridContainer {
+  margin-top: 20px;
+}
+
+.patternContainer {
+  border: 3px solid black;
+}
+
+.contentsTitleText {
+  padding: 4px;
+  border-bottom: 1px solid black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contentsTitleText.noBorder {
+  border-bottom: none;
+}
+
+.contentsInputContainer {
+  padding: 8px 4px;
+  border-bottom: 1px solid black;
+}
+
+.previewContainer {
+  position: relative;
+  width: 320px;
+  max-width: 100%;
+  height: 320px;
+  margin: 8px auto 0;
+}
+
+.contentsInputText {
+  padding: 4px 0;
+}
+
+.yarnAndNeedleContainer {
+  margin-top: 8px;
+  border: 3px solid black;
+}
+
+.contentsGrid {
+  padding: 4px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentsFilesContainer {
+  display: flex;
+  column-gap: 4px;
+}
+
+.contentsInput {
+  height: 100%;
+  margin-top: 20px;
+}
+
+.contentsInput > div,
+.contentsInput textarea {
+  height: 100% !important; 
+}
+
+@media screen and (max-width: 599px) {
+  .titleText {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .titleText {
+    font-size: 14px;
+  }
+
+  .dateText {
+    font-size: 14px;
+  }
+
+  .startDateContainer > div > div > div,
+  .endDateContainer > div > div > div {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .endDateContainer {
+    margin-top: 8px;
+  }
+
+  .actionContainer, 
+  .contentsGridContainer {
+    margin-top: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .patternContainer,
+  .yarnAndNeedleContainer,
+  .contentsGrid {
+    border: 3px solid white;
+  }
+}

@@ -1,0 +1,8 @@
+.paginationContainer {
+  margin-top: 20px;
+}
+
+.paginationContainer ul {
+  display: flex;
+  justify-content: center;
+}
